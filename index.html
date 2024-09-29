@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body style="background-color:#13274F; font-family: Arial,sans-serif; ">
+    <header>
+
+        <h3>PRODUCT ADMIN</h3>
+        <nav class="middle">
+            <div class="orange">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi-speedometer2" viewBox="0 0 16 16">
+                    <path
+                        d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4M3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707M2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10m9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5m.754-4.246a.39.39 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.39.39 0 0 0-.029-.518z" />
+                    <path fill-rule="evenodd"
+                        d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A8 8 0 0 1 0 10m8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3" />
+                    <br>
+                    <a href="#" class="up">Dashboard</a>
+                </svg>
+            </div>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="earmark"
+                viewBox="0 0 16 16">
+                <path
+                    d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5" />
+                <path
+                    d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z" />
+            </svg>
+            <a href="#">Reports</a>
+
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="cart3"
+                viewBox="0 0 16 16">
+                <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+            </svg>
+            <a href="#">Products</a>
+            <img src="./pictures/arrow-down.png" class="pic">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="person"
+                viewBox="0 0 16 16">
+                <path
+                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+            </svg>
+            <a href="#">Accounts</a>
+
+
+            <div class="settings-container">
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="gear"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0" />
+                    <path
+                        d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z" />
+                </svg>
+            </div>
+
+
+            <a href="#">Settings</a>
+            <img src="./pictures/arrow-down.png">
+            <div class="prof">
+                <ul>
+                    <li><a href=" #" id="color">Profile</a></li>
+                    <li><a href="#">Billing</a></li>
+                    <li><a href="#">Customize</a></li>
+                </ul>
+            </div>
+            </div>
+            </div>
+            <div class="Right">
+                <a href="#">Admin,</a>
+                <a href="#">Logout</a>
+            </div>
+        </nav>
+    </header>
+
+    <h4>Welcome back, Admin</h4>
+
+    <div class="container">
+        <div class="chart1">
+            <h3>Latest Hits</h3>
+            <img src="./pictures/chart1.jpg" width="350px">
+        </div>
+        <div class="chart2">
+            <h3>Performance</h3>
+            <img src="./pictures/chart2.jpg" width="350px">
+        </div>
+
+    </div> <br><br><br><br><br>
+    <br>
+
+    <div class="container-1">
+        <div class="pie">
+            <h3>Storage Information</h3>
+            <img src="./pictures/pie-chart.jpg" width="400px" height="300px">
+        </div>
+
+        <div class="notification">
+            <h3>Notification List</h3>
+            <div class="style">
+                <ul class="list-style">
+                    <li class="lis">
+                        <img src="./pictures/notification-01.jpg" alt="">
+                        <p>Jessica and 6 others sent you new <span class="col">product updates.</span> Check new orders
+                        </p>
+                        <span class="span">6h ago.</span>
+                    </li>
+                    <li class="lis1">
+                        <img src="./pictures/notification-02.jpg" alt="">
+                        <p>Pliver Too and and 6 others sent you existing <span class="col">product updates</span>.Read
+                            more
+                            reports </p>
+                        <span class="span1">6h ago.</span>
+                    </li>
+                    <li class="lis2"><img src="./pictures/notification-03.jpg" alt="">
+                        <p>Victoria and 6 others sent you <span class="col">orders updates.</span>Read order
+                            information.
+                        </p>
+                        <span class="span2">6h ago</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="container-2">
+        <h3>Orders list</h3>
+        <table border="1" cell-spacing="0" cell-padding="20">
+            <thead>
+                <tr>
+                    <th>ORDER NO.</th>
+                    <th>STATUS</th>
+                    <th>OPERATORS</th>
+                    <th>LOCATION</th>
+                    <th>DISTANCE</th>
+                    <th>START DATE</th>
+                    <th>EST DELIVERY DUE</th>
+                </tr>
+            <tbody>
+                <tr>
+                    <td>#122349</td>
+                    <td>
+                        <span class="dot">
+
+                        </span>
+                        Moving
+                    </td>
+                    <td>Oliver Trag</td>
+                    <td>London, UK</td>
+                    <td>485 km</td>
+                    <td>16:00,12 NOV 2018</td>
+                    <td>08:00,18 NOV 2018</td>
+                </tr>
+                <tr>
+                    <td>#122348</td>
+                    <td><span class="dot1"></span>
+                        Pending</td>
+                    <td>Jacob Miller</td>
+                    <td>London, UK</td>
+                    <td>360 km</td>
+                    <td>11:00,10 NOV 2018</td>
+                    <td>04:00,14 NOv 2018</td>
+                </tr>
+                <tr>
+                    <td>#122347</td>
+                    <td><span class="dot2"></span>
+                        Cancelled</td>
+
+                    <td>George Wilson</td>
+                    <td>London, UK</td>
+                    <td>340 km</td>
+                    <td>12:00,22 NOV 2018</td>
+                    <td>06:00,28 NOV 2018</td>
+                </tr>
+                <tr>
+                    <td>#122346</td>
+                    <td><span class="dot"></span> Moving</td>
+                    <td>William Aung</td>
+                    <td>London, UK</td>
+                    <td>218 km</td>
+                    <td>15:00,10 NOV 2018</td>
+                    <td>09:00,14 NOV 2018</td>
+                </tr>
+                <tr>
+                    <td>#122345</td>
+                    <td><span class="dot1"></span> Pending</td>
+                    <td>Harry Ryan</td>
+                    <td>London,UK</td>
+                    <td>280 km</td>
+                    <td>15:00,11 NOV 2018</td>
+                    <td>09:00,17 NOV 2018</td>
+                </tr>
+                <tr>
+                    <td>#122344</td>
+                    <td><span class="dot1"></span> Pending</td>
+                    <td>Michael Jones</td>
+                    <td>London,UK</td>
+                    <td>218 km</td>
+                    <td>18:00.12 OCT 2018</td>
+                    <td>06:00,18 OCT 2018</td>
+                </tr>
+            </tbody>
+            </thead>
+
+        </table>
+
+    </div>
+
+    <footer>
+        Copyright © 2018 All rights reserved.Design:Template Mo
+    </footer>
+
+    <header class="head">
+        <h3>PRODUCT ADMIN</h3>
+        <nav class="middle1">
+            <div class="orange1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi-speedometer-3" viewBox="0 0 16 16">
+                    <path
+                        d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4M3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707M2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10m9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5m.754-4.246a.39.39 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.39.39 0 0 0-.029-.518z" />
+                    <path fill-rule="evenodd"
+                        d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A8 8 0 0 1 0 10m8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3" />
+                    <br>
+                    <a href="#" class="up-1">Dashboard</a>
+                </svg>
+            </div>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="earmark"
+                viewBox="0 0 16 16">
+                <path
+                    d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5" />
+                <path
+                    d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z" />
+            </svg>
+            <a href="#">Reports</a>
+
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="cart3"
+                viewBox="0 0 16 16">
+                <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+            </svg>
+            <a href="#">Products</a>
+            <img src="./pictures/arrow-down.png" class="pic">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="person1"
+                viewBox="0 0 16 16">
+                <path
+                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+            </svg>
+            <div class="orange2">
+                <a href="#">Accounts</a>
+            </div>
+            <div class="settings-container">
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="gear"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0" />
+                    <path
+                        d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z" />
+                </svg>
+            </div>
+
+
+            <a href="#">Settings</a>
+            <img src="./pictures/arrow-down.png">
+            <div class="right1">
+                <a href="#">Admin,</a>
+                <a href="#">Logout</a>
+            </div>
+        </nav>
+    </header>
+    <div class="contain">
+        <div class="contain-1">
+            <h3>List of Accounts</h3>
+            <label for="text">Accounts</label><br>
+            <input type="text" name="" id="" placeholder="Select account"><img src="./pictures/arrow-down.png"
+                width="8px" class="clip">
+
+        </div>
+    </div>
+
+    <div class="boxes">
+        <div class="box">
+            <h3>Change Avatar</h3>
+            <img src="./pictures/avatar.png" alt="" width="250px" height="250px">
+            <span class="photo">UPLOAD NEW PHOTO</span>
+        </div>
+        <div class="form">
+            <h3>Account Settings</h3>
+            <div class="form1">
+                <label for="text">Account Name</label>
+                <input type="text" name="" id="" placeholder="">
+
+                <label for="text">Account Email</label>
+                <input type="text" name="" id="" placeholder="">
+                <br><br>
+            </div>
+            <div class="form2">
+                <label for="text">Password</label>
+                <input type="text" name="" id="" placeholder="">
+
+                <label for="text">Re-enter Password</label>
+                <input type="text" name="" id="" placeholder="">
+            </div>
+            <div class="form3">
+                <label for="text">Phone</label>
+                <input type="text" name="" id="" placeholder="">
+                <span class="update">Update Your Profile</span>
+            </div>
+            <span class="del">Delete your account</span>
+        </div>
+
+    </div>
+</body>
+
+</html>
